@@ -14,9 +14,11 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "https://registry.yarnpkg.com/"
+    "registry": "http://47.103.4.88:4873/",
+    "access": "public"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
-  }
+  },
+  "gitHead": "23989bca6b0fb30e886db173fbd19d9bd12b0c6a"
 }
