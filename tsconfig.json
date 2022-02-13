@@ -9,5 +9,13 @@
     "forceConsistentCasingInFileNames": true,
     "sourceMap": true,
     "declaration": true
-  }
+  },
+  "include": [
+    "packages/**/*.ts",
+    "packages/**/*.tsx",
+    "packages/**/*.vue",
+    "typings/**/*.ts",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ]
 }
