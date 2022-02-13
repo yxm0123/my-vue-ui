@@ -4,13 +4,6 @@
   "workspaces": [
     "packages/*"
   ],
-  "main": "dist/index.min.js",
-  "module": "dist/index.esm.js",
-  "typings": "dist/index.d.ts",
-  "author": {
-    "name": "lola",
-    "email": "771685455@@qq.com"
-  },
   "scripts": {
     "serve": "webpack serve --config ./website/webpack.config.js",
     "build": "webpack --config ./build/webpack.config.js",
