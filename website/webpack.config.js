@@ -13,6 +13,14 @@ module.exports ={
   resolve: {
     extensions: ['.ts', '.tsx','.js','.vue']
   },
+  devServer:{
+      static: {
+          directory: path.join(__dirname, 'dist'),
+      },
+      compress: true,// 启用压缩
+      port: 9000, // 端口
+      open:true, //启动之后自动打开
+  },
   module: {
     rules:[
       {
@@ -42,7 +50,7 @@ module.exports ={
         use: [
           'style-loader',
           'css-loader',
-          'sacss-loader'
+          'sass-loader'
         ]
       }
     ]

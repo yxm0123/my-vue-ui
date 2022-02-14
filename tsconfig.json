@@ -14,6 +14,9 @@
     "packages/**/*.ts",
     "packages/**/*.tsx",
     "packages/**/*.vue",
+    "website/**/*.ts",
+    "website/**/*.tsx",
+    "website/**/*.vue",
     "typings/**/*.ts",
     "tests/**/*.ts",
     "tests/**/*.tsx"

@@ -1,5 +1,6 @@
 import { createApp } from "vue";
 import App from './App.vue';
-import myUI from 'my-ui';
-// import myUI from '../dist/index.esm.js'
-createApp(App).use(myUI).mount('#app')
+import ElementPlus from 'element-plus';
+import 'element-plus/lib/theme-chalk/index.css';
+// import myUI from '../dist/button'
+createApp(App).use(ElementPlus).mount('#app')

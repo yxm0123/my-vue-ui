@@ -1,17 +1,15 @@
 <template>
-  <el-button class="cer-button">
-    <span v-if="$slots.default"><slot></slot></span>
-  </el-button>
+  <div class="cer-color">pink</div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'CerButton'
+  name: 'CerColor'
 })
 </script>
 <style lang="scss" scoped>
-.cer-button{
+.cer-color{
   color: pink;
 }
 </style>

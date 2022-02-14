@@ -1,16 +1,19 @@
 import { App } from "vue";
-import Button from "@my-ui/button";
-import Icon from '@my-ui/icon'
+import CerButton from './button';
+import CerColor from './color';
 
 const components = [
-  Button,
-  Icon
+  CerButton,
+  CerColor
 ]
 
 const install = (app:App):void =>{
-  components.map(component =>{
+  components.map((component)=>{
     app.component(component.name,component)
   })
+}
+export {
+  CerButton
 }
 export default {
   install

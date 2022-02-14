@@ -3,7 +3,7 @@ const {VueLoaderPlugin} = require('vue-loader')
 const path = require('path');
 module.exports ={
   mode:'production',
-  entry:path.resolve(__dirname, '../packages/my-ui/index.ts'),
+  entry:path.resolve(__dirname, '../packages/index.ts'),
   output: {
     path:path.resolve(__dirname, '../dist'),
     filename: 'index.js',
@@ -31,18 +31,18 @@ module.exports ={
         test: /\.vue$/,
         loader: 'vue-loader'
       },
-      // {
-      //   test: /\.(png|gif|otf|ttf|jpg)$/,
-      //   loader:'url-loader'
-      // },
-      // {
-      //   test: /\.(scss|css)$/,
-      //   use: [
-      //     'style-loader',
-      //     'css-loader',
-      //     'sacss-loader'
-      //   ]
-      // }
+      {
+        test: /\.(png|gif|otf|ttf|jpg)$/,
+        loader:'url-loader'
+      },
+      {
+        test: /\.(scss|css)$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
+      }
     ]
   },
   plugins: [
