@@ -1,0 +1,13 @@
+.DS_Store
+.idea
+.vscode
+build/
+website/
+packages/
+node_modules/
+typings/
+​
+# 忽略指定文件
+babel.config.js
+tsconfig.json
+.gitignore

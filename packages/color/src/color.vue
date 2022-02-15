@@ -1,15 +1,15 @@
 <template>
-  <div class="cer-color">pink</div>
+  <div class="my-color">pink</div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'CerColor'
+  name: 'MyColor'
 })
 </script>
 <style lang="scss" scoped>
-.cer-color{
+.my-color{
   color: pink;
 }
 </style>

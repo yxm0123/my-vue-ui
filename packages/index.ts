@@ -1,10 +1,10 @@
 import { App } from "vue";
-import CerButton from './button';
-import CerColor from './color';
+import MyButton from './button';
+import MyColor from './color';
 
 const components = [
-  CerButton,
-  CerColor
+  MyButton,
+  MyColor
 ]
 
 const install = (app:App):void =>{
@@ -13,7 +13,8 @@ const install = (app:App):void =>{
   })
 }
 export {
-  CerButton
+  MyButton,
+  MyColor
 }
 export default {
   install
